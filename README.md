@@ -1,7 +1,7 @@
 # Angular-Theme-Setup
 ### ng new projectName --routing
 ### Replace with your app-routing.ts with blow code
-```js
+```ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -21,18 +21,18 @@ const routes: Routes = [
 export class AppRoutingModule { }
 
 ```
-inside your app.module.ts just add
+### inside your app.module.ts just add
 ```js
 import { AppRoutingModule } from './app-routing.module';
  imports: [
     AppRoutingModule
   ],
 ```
-## Admin
+## src/admin
 create a folder name admin inside src/admin and create blow files(4)
 
 ### 1- admin-routing.module.ts
-```js
+```ts
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
@@ -63,7 +63,7 @@ export class AdminRoutingModule {
 
 ```
 ### 2- admin.component.ts
-```js
+```ts
 import { Component } from '@angular/core';
 
 

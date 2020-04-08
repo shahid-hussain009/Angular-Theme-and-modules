@@ -33,23 +33,33 @@ create a folder name admin inside src/admin and create blow files(4)
 
 ### 1- admin-routing.module.ts
 ```js
+import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
 
+import { AdminComponent } from './admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
-const routes: Routes = [
-    {
-        path: 'admin',
-        loadChildren: () => import('./admin/admin.module')
-            .then(m => m.AdminModule),
-    }
-];
+const routes: Routes = [{
+    path: '',
+    component: AdminComponent,
+    children: [
+        {
+            path: 'dashboard',
+            component: DashboardComponent
+        },
+        {
+            path: '**',
+        },
+    ],
+}];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+    imports: [RouterModule.forChild(routes)],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AdminRoutingModule {
+}
+
 
 ```
 ### 2- admin.component.ts

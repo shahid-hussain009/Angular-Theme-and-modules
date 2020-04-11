@@ -112,10 +112,11 @@ import { SidebarComponent } from './layout/sidebar/sidebar.component';
 export class AdminModule {
 }
 
-``
+```
 # Authentication Process Start here
 
-## Make a login component
+## Make a login component inside auth/login
+To genrate component use  ng g c auth/login --skipTests=true
 inside login.component.ts
 
 ```ts
@@ -150,6 +151,7 @@ export class LoginComponent implements OnInit {
 
 ```
 ### Make auth servie inside src/app/shared/auth.service.ts
+To genrate service use  ng g s shared/auth --skipTests=true
 
 ```ts
 noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
@@ -205,8 +207,8 @@ noAuthHeader = { headers: new HttpHeaders({ 'NoAuth': 'True' }) };
 
 ```
 
-### make auth folder inside makes two files auth.guard.ts and auth.interceptor.ts
-
+### make auth folder inside app/auth  two files auth.guard.ts and auth.interceptor.ts
+to genrate guard just use ng g g auth/auth
 ### auth.guard.ts
 inside auth/auth.guard.ts past bellow code
 ```ts
@@ -263,7 +265,7 @@ import {
 ```
 
 ### Routing
-
+if you are using seprate module and routing like admin then just use AuthGuard in that admin.routing.ts file if not using seprate module then js past the code inside app.routing.ts file
 ```ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

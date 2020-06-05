@@ -28,8 +28,8 @@ import { AppRoutingModule } from './app-routing.module';
     AppRoutingModule
   ],
 ```
-## src/admin
-create a folder name admin inside src/admin and create blow files(4)
+## src/app/admin
+create a folder name admin inside src/app/admin and create blow files(4)
 
 ### 1- admin-routing.module.ts
 ```ts
@@ -265,7 +265,7 @@ import {
 ```
 
 ### Routing
-if you are using seprate module and routing like admin then just use AuthGuard in that admin.routing.ts file if not using seprate module then js past the code inside app.routing.ts file
+if you are using seprate module and routing like admin then just use AuthGuard in that admin.routing.ts file if not using seprate module then just past the blow code inside your app.routing.ts file
 ```ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

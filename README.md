@@ -1,4 +1,4 @@
-# Angular-Theme-Setup and Authentication
+# Angular Admin Module and Authentication
 ### ng new projectName --routing
 ### Replace with your app-routing.ts with blow code
 ```ts

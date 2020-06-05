@@ -238,7 +238,7 @@ export class AuthGuard implements CanActivate {
 
 ```
 ### auth.interceptor.ts
-inside auth/auth.interceptor.ts file and pass below code
+inside auth/auth.interceptor.ts file and paste below code
 ```ts
 import {
     HttpInterceptor,
@@ -265,7 +265,7 @@ import {
 ```
 
 ### Routing
-if you are using seprate module and routing like admin then just use AuthGuard in that admin.routing.ts file if not using seprate module then just past the blow code inside your app.routing.ts file
+if you are using seprate module and routing like admin then just use AuthGuard in that admin.routing.ts file if not using seprate module then just paste the blow code inside your app.routing.ts file
 ```ts
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';

@@ -30,8 +30,13 @@ import { AppRoutingModule } from './app-routing.module';
 ```
 ## src/app/admin
 create a folder name admin inside src/app/admin and create blow files(4)
+
 using 
 ### ng g module modulename (admin)
+
+to create modulce inside your new module 
+
+### ng generate module admin/admin-routing --flat --module=admin
 
 ### 1- admin-routing.module.ts
 ```ts

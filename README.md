@@ -1,5 +1,7 @@
 # Angular-Admin-Module and Authentication
-### ng new projectName --routing
+### ng new projectName --routing 
+### OR
+### ng g module app-routing --flat --module=app
 ### Replace with your app-routing.ts with blow code
 ```ts
 import { NgModule } from '@angular/core';
